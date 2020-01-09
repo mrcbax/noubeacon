@@ -82,5 +82,7 @@ fn main() {
     audio_thread(21500.0);
     audio_thread(21750.0);
     audio_thread(22000.0);
-    thread::sleep(Duration::from_millis(1000));
+    loop {
+        thread::sleep(Duration::from_millis(1000));
+    }
 }
