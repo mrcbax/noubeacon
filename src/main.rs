@@ -10,10 +10,10 @@ fn audio_thread(frequency: f32) {
     thread::spawn(move || {
         let host = cpal::default_host();
         let device = host.default_output_device().expect("failed to find a default output device");
-        let format = device.default_output_format().unwrap();
+        let format = device.default_output_format().expect("failed to obtain a proper output format");
         let event_loop = host.event_loop();
-        let stream_id = event_loop.build_output_stream(&device, &format).unwrap();
-        event_loop.play_stream(stream_id.clone()).unwrap();
+        let stream_id = event_loop.build_output_stream(&device, &format).expect("failed to build output stream");
+        event_loop.play_stream(stream_id.clone()).expect("failed to play stream");
 
         let sample_rate = format.sample_rate.0 as f32;
         let mut sample_clock = 0f32;
