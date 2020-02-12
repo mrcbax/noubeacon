@@ -9,7 +9,6 @@ repository = "https://github.com/LogoiLab/noubeacon"
 license = "GPL-3.0"
 readme = "README.md"
 keywords = ["Silverpush", "lisnr", "ultrasonic", "beacon", "jammer"]
-categories = ["security", "privacy"]
 
 [dependencies]
 anyhow = "1.0.26"
