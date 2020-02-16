@@ -1,6 +1,6 @@
 [package]
 name = "noubeacon"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Chad Baxter <cbaxter@mail.umw.edu>"]
 edition = "2018"
 publish = true
@@ -8,7 +8,7 @@ description = "A simple jammer for ultrasonic beacons from companies like Silver
 repository = "https://github.com/LogoiLab/noubeacon"
 license = "GPL-3.0"
 readme = "README.md"
-keywords = ["Silverpush", "lisnr", "ultrasonic", "beacon", "jammer"]
+keywords = ["silverpush", "lisnr", "ultrasonic", "beacon", "jammer"]
 
 [dependencies]
 anyhow = "1.0.26"
