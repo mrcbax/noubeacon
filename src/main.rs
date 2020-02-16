@@ -65,23 +65,11 @@ fn audio_thread(frequency: f32) {
 }
 
 fn main() {
-    audio_thread(18000.0);
-    audio_thread(18250.0);
-    audio_thread(18500.0);
-    audio_thread(18750.0);
-    audio_thread(19000.0);
-    audio_thread(19250.0);
+    //audio_thread(18000.0);
     audio_thread(19500.0);
-    audio_thread(19750.0);
+    audio_thread(19000.0);
     audio_thread(20000.0);
-    audio_thread(20250.0);
-    audio_thread(20500.0);
-    audio_thread(20750.0);
-    audio_thread(21000.0);
-    audio_thread(21250.0);
-    audio_thread(21500.0);
-    audio_thread(21750.0);
-    audio_thread(22000.0);
+    //audio_thread(22000.0);
     loop {
         thread::sleep(Duration::from_millis(1000));
     }
